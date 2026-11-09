@@ -105,6 +105,9 @@ h2.sub { font-size: 20px; text-align: center; color: var(--green-ink); }
 .t-red    { background: var(--red-soft);    color: var(--red); }
 
 .cap { margin: 0; text-align: center; color: var(--muted); font-size: 15px; }
+.cap b { color: var(--ink); }
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.chips span { background: var(--blue-soft); color: var(--blue); font-weight: 700; font-size: 14px; padding: 5px 13px; border-radius: 99px; }
 
 /* ---------- 말풍선 ---------- */
 .bubble {
@@ -136,6 +139,12 @@ h2.sub { font-size: 20px; text-align: center; color: var(--green-ink); }
   background: linear-gradient(rgba(255, 255, 255, 0), #fff 85%);
   pointer-events: none;
 }
+/* 이미지 아래쪽(준비물 영역)을 보여주는 변형 */
+.shot.bottom { display: flex; align-items: flex-end; }
+.shot.bottom img { flex: none; }
+.shot.bottom .zoom { bottom: auto; top: 10px; }
+.shot.bottom.clipped::after { inset: 0 0 auto 0; background: linear-gradient(#fff 10%, rgba(255, 255, 255, 0)); height: 40px; }
+.from { margin: -4px 0 0; align-self: flex-start; font-size: 14px; color: var(--muted); }
 .zoom {
   position: absolute; z-index: 1; right: 10px; bottom: 10px;
   font-size: 12px; color: #fff; background: rgba(42, 42, 38, .72);
