@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FBF8F1">
+  <title>아이캐치 사용 가이드</title>
+  <meta name="description" content="말하듯 남기면 AI가 아이의 일정·식단·학습·건강 기록으로 정리해 드려요. 학부모님을 위한 아이캐치 사용 가이드.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="아이캐치 사용 가이드">
+  <meta property="og:description" content="말하듯 남기면 AI가 정리해 드려요. 옆으로 넘기며 1분 만에 살펴보세요.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%233B6B55'/%3E%3Cpath d='M8 10.5A3.5 3.5 0 0 1 11.5 7h9a3.5 3.5 0 0 1 3.5 3.5v6a3.5 3.5 0 0 1-3.5 3.5H15l-4.5 4v-4h0A3.5 3.5 0 0 1 8 16.5z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="topbar" aria-hidden="false">
+    <div class="progress"><i id="bar"></i></div>
+    <div class="topmeta">
+      <span id="section">아이캐치</span>
+      <span id="count">1 / 1</span>
+    </div>
+  </header>
+
+  <main class="deck" id="deck" tabindex="0" aria-label="아이캐치 사용 가이드. 좌우로 넘겨 보세요">
+
+    <!-- 01 표지 -->
+    <section class="slide cover" data-section="아이캐치">
+      <div class="cover-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="44" height="44"><rect width="32" height="32" rx="9" fill="#3B6B55"/><path d="M8 10.5A3.5 3.5 0 0 1 11.5 7h9a3.5 3.5 0 0 1 3.5 3.5v6a3.5 3.5 0 0 1-3.5 3.5H15l-4.5 4v-4A3.5 3.5 0 0 1 8 16.5z" fill="#fff"/></svg>
+      </div>
+      <p class="eyebrow">만 1~5세 자녀를 키우는 부모님께</p>
+      <h1>아이캐치</h1>
+      <p class="lead">말하듯 남기면,<br>AI가 알아서 정리해 드려요</p>
+      <div class="swipe-hint" aria-hidden="true">
+        <span>옆으로 넘겨 보세요</span>
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </section>
+
+    <!-- 02 말하듯 남기기 -->
+    <section class="slide" data-section="기록">
+      <span class="tag t-green">기록</span>
+      <h2>이렇게 한마디만 적으면</h2>
+      <div class="bubble">모레 유치원에서 물놀이한다고, 수영복 챙겨달래. 오늘은 피아노 갔다가 닭가슴살 샌드위치 먹었고, 열은 36.9도로 내렸어.</div>
+      <div class="down" aria-hidden="true">↓</div>
+      <h2 class="sub">알아서 나눠 담아요</h2>
+      <div class="split">
+        <div class="mini m-green"><b>일정</b><span>모레 물놀이</span><em>수영복 챙기기</em></div>
+        <div class="mini m-indigo"><b>학습</b><span>피아노</span></div>
+        <div class="mini m-terra"><b>식단</b><span>닭가슴살 샌드위치</span></div>
+        <div class="mini m-red"><b>건강</b><span>36.9도</span><em>열이 내렸어요</em></div>
+      </div>
+      <p class="cap">칸을 채우거나 항목을 고를 필요가 없어요</p>
+    </section>
+
+    <!-- 03 긴 일기 -->
+    <section class="slide" data-section="기록">
+      <span class="tag t-green">기록</span>
+      <h2>긴 일기처럼 적어도 괜찮아요</h2>
+      <figure class="shot"><img src="assets/diary.jpg" alt="긴 일기를 8건의 기록(놀이·식사·교육·생활습관)으로 나누어 저장한 화면" width="529" height="850"><span class="zoom">탭하면 크게 보여요</span></figure>
+      <p class="cap">놀이 · 식사 · 교육 · 생활습관으로 나눠서 저장해요</p>
+    </section>
+
+    <!-- 04 일정 만들기 -->
+    <section class="slide" data-section="일정">
+      <span class="tag t-blue">일정</span>
+      <h2>일정도 말로 만들어요</h2>
+      <div class="bubble">오늘부터 11월 30일까지, 매주 화요일과 금요일 오후 7시에 태권도학원 일정 만들어줘</div>
+      <figure class="shot"><img src="assets/sched-chat.jpg" alt="반복 일정 요청에 일정 1건을 찾았다며 '확인하고 넣기' 버튼을 보여주는 화면" width="733" height="486"><span class="zoom">탭하면 크게 보여요</span></figure>
+      <p class="cap">‘확인하고 넣기’를 눌러야 캘린더에 들어가요</p>
+    </section>
+
+    <!-- 05 일정 카드 -->
+    <section class="slide" data-section="일정">
+      <span class="tag t-blue">일정</span>
+      <h2>요일·시간·준비물까지 찾아줘요</h2>
+      <figure class="shot"><img src="assets/sched-card.jpg" alt="제목, 반복 요일, 시작 시간, 준비물이 채워진 일정 카드" width="519" height="715"><span class="zoom">탭하면 크게 보여요</span></figure>
+      <p class="cap">앱에서는 확인하면 알림도 가요</p>
+    </section>
+
+    <!-- 06 일정 수정 -->
+    <section class="slide" data-section="일정">
+      <span class="tag t-blue">일정</span>
+      <h2>바꾼 내용이 한눈에 보여요</h2>
+      <figure class="shot"><img src="assets/sched-edit.jpg" alt="등원 시간이 오전 8시에서 7시 20분으로 바뀌고 준비물이 더해진 수정 카드" width="603" height="778"><span class="zoom">탭하면 크게 보여요</span></figure>
+      <p class="cap">시간 변경, 준비물 추가도 말로 수정해요</p>
+    </section>
+
+    <!-- 07 식사 추천 -->
+    <section class="slide" data-section="추천">
+      <span class="tag t-terra">추천 · 식사</span>
+      <h2>먹은 기록을 보고 메뉴를 골라요</h2>
+      <figure class="shot"><img src="assets/meal.jpg" alt="최근 먹은 기록을 근거로 한 식사 후보 3가지와 추천 이유" width="601" height="987"><span class="zoom">탭하면 크게 보여요</span></figure>
+      <p class="cap">추천 이유와 사용한 기록을 함께 보여드려요</p>
+    </section>
+
+    <!-- 08 행사 추천 -->
+    <section class="slide" data-section="추천">
+      <span class="tag t-green">추천 · 놀이</span>
+      <h2>주말에 갈 곳도 찾아드려요</h2>
+      <div class="bubble">아이랑 갈만한 부산 행사 추천해줘</div>
+      <figure class="shot"><img src="assets/event.jpg" alt="한국관광공사 행사 정보를 바탕으로 한 부산 행사 추천 3가지" width="541" height="687"><span class="zoom">탭하면 크게 보여요</span></figure>
+      <p class="cap">공공 행사 정보와 표준 교육과정을 근거로 해요</p>
+    </section>
+
+    <!-- 09 책 추천 -->
+    <section class="slide" data-section="추천">
+      <span class="tag t-indigo">추천 · 성장</span>
+      <h2>함께 읽을 책을 추천받아요</h2>
+      <figure class="shot"><img src="assets/book.jpg" alt="아이의 학습 기록을 바탕으로 한 그림책 추천 3권" width="655" height="846"><span class="zoom">탭하면 크게 보여요</span></figure>
+      <p class="cap">실제 책 제목과 지은이로 알려드려요</p>
+    </section>
+
+    <!-- 10 어려워하는 부분 -->
+    <section class="slide" data-section="추천">
+      <span class="tag t-indigo">추천 · 성장</span>
+      <h2>아이가 어려워하는 부분을 도와요</h2>
+      <figure class="shot"><img src="assets/hard.jpg" alt="국어 읽기를 어려워한 기록을 바탕으로 한 3단계 활동 추천" width="630" height="1003"><span class="zoom">탭하면 크게 보여요</span></figure>
+      <p class="cap">집에서 바로 해볼 수 있는 단계별 활동이에요</p>
+    </section>
+
+    <!-- 11 칭찬 -->
+    <section class="slide" data-section="정리">
+      <span class="tag t-indigo">정리 · 칭찬</span>
+      <h2>오늘 아이에게 해줄 칭찬 한마디</h2>
+      <div class="bubble">우리 아이에게 칭찬해야 하는데, 저장된 기록들 보고 칭찬할 내용 알려줘</div>
+      <figure class="shot"><img src="assets/praise.jpg" alt="저장된 기록을 보고 칭찬할 내용과 건넬 말을 알려주는 화면" width="543" height="439"><span class="zoom">탭하면 크게 보여요</span></figure>
+      <p class="cap">쌓아둔 기록이 칭찬거리가 돼요</p>
+    </section>
+
+    <!-- 12 건강 요약 -->
+    <section class="slide" data-section="정리">
+      <span class="tag t-red">정리 · 건강</span>
+      <h2>병원 가기 전, 증상이 한 번에</h2>
+      <div class="bubble">병원에 가려고 하는데 최근 증상 정리해줘</div>
+      <figure class="shot"><img src="assets/health.jpg" alt="날짜순 증상, 먹인 약, 최근 식사, 알레르기와 만성질환이 정리된 화면" width="544" height="367"><span class="zoom">탭하면 크게 보여요</span></figure>
+      <p class="cap">증상 · 먹인 약 · 식사 · 알레르기를 날짜순으로</p>
+    </section>
+
+    <!-- 13 안심 -->
+    <section class="slide" data-section="안심">
+      <span class="tag t-green">안심</span>
+      <h2>부모님 마음 놓이도록</h2>
+      <ul class="trust">
+        <li><i>🔒</i><div><b>갤러리는 보지 않아요</b><span>알림으로 기록을 재촉하지도 않아요</span></div></li>
+        <li><i>🥜</i><div><b>알레르기는 늘 빼고 추천해요</b><span>등록한 알레르기 식품·활동은 자동으로 걸러요</span></div></li>
+        <li><i>📚</i><div><b>믿을 만한 근거로 추천해요</b><span>농식품정보원 · 농촌진흥청 · 교육부 고시 과정</span></div></li>
+        <li><i>🔍</i><div><b>추천 이유를 보여드려요</b><span>어떤 기록을 썼는지 함께 확인해요</span></div></li>
+        <li><i>✏️</i><div><b>채팅 한마디로 고치고 지워요</b><span>잘못 기록된 내용도 바로 수정</span></div></li>
+        <li><i>👨‍👩‍👧</i><div><b>가족과 실시간으로 공유해요</b><span>일정과 식단을 양육자 모두가 함께</span></div></li>
+      </ul>
+    </section>
+
+    <!-- 14 권장 입력 시작 -->
+    <section class="slide" data-section="시작하기">
+      <span class="tag t-terra">시작하기</span>
+      <h2>이렇게 시작해 보세요</h2>
+      <ol class="steps">
+        <li>
+          <span class="n">1</span>
+          <div><b>있었던 일을 편하게 여러 건</b>
+            <q>오늘 혼자 양치하고 잠옷도 입었어</q></div>
+        </li>
+        <li>
+          <span class="n">2</span>
+          <div><b>아이가 좋아하는 것도 알려 주세요</b>
+            <q>공룡 좋아해</q><q>브로콜리 싫대</q></div>
+        </li>
+        <li>
+          <span class="n">3</span>
+          <div><b>추천을 받아 보세요</b>
+            <q>아이랑 할 놀이</q><q>우리 아이에게 추천할만한 교육활동</q></div>
+        </li>
+      </ol>
+      <p class="cap">기록이 쌓일수록 추천이 다양해지고 우리 아이에게 더 잘 맞아요</p>
+    </section>
+
+    <!-- 15 입력 예시: 기록하기 -->
+    <section class="slide" data-section="입력 예시">
+      <span class="tag t-green">입력 예시 · 기록하기</span>
+      <h2>카톡 보내듯 적어 주세요</h2>
+      <ul class="ex">
+        <li><q>점심은 거의 다 먹었고, 낮잠 자고 나서 기침을 조금 했대</q><p>식사와 건강 기록으로 나눠 저장해요</p></li>
+        <li><q>오늘 혼자 양치하고 잠옷도 입었어</q><p>생활 기록 2건으로 저장해요</p></li>
+        <li><q>브로콜리 싫대</q><p>싫어하는 음식으로 기록하고 다음 메뉴에 반영해요</p></li>
+        <li><q>열이 38.2도야</q><p>체온과 함께 건강 기록으로 저장해요</p><p class="note">“열이 나”처럼 체온이 빠지면 몇 도인지 물어봐요</p></li>
+        <li><q>새벽 3시에 해열제 먹였어</q><p>먹인 약 기록으로 저장해요</p></li>
+        <li><q>간식으로 딸기케이크 먹였어. 저녁엔 뭘 먹일까?</q><p>먼저 기록하고, 그걸 반영해 저녁 메뉴를 골라요</p></li>
+      </ul>
+    </section>
+
+    <!-- 16 입력 예시: 일정·준비물 -->
+    <section class="slide" data-section="입력 예시">
+      <span class="tag t-blue">입력 예시 · 일정과 준비물</span>
+      <h2>일정은 확인해야 저장돼요</h2>
+      <ul class="ex">
+        <li><q>금요일 오전 10시에 물놀이 있어. 수영복이랑 여벌옷 챙겨야 해</q><p>일정 카드가 나와요. 확인을 눌러야 캘린더에 들어가요</p></li>
+        <li><q>내일 무슨 일정 있어?</q><p>내일 일정을 알려 드려요</p></li>
+        <li><q>운동회 시간을 오전 10시로 바꿔줘</q><p>바뀌기 전과 후가 보이는 카드가 나와요</p></li>
+        <li><q>운동회에 물통이랑 모자도 챙겨야 해</q><p>준비물에 더한 카드가 나와요</p></li>
+        <li><q>운동회 준비물 체육복 챙겼다고 체크해줘</q><p>바로 체크돼요</p></li>
+      </ul>
+    </section>
+
+    <!-- 17 입력 예시: 물어보기(일상) -->
+    <section class="slide" data-section="입력 예시">
+      <span class="tag t-terra">입력 예시 · 물어보기</span>
+      <h2>먹을 것, 놀이, 책 물어보세요</h2>
+      <ul class="ex">
+        <li><q>오늘 저녁 뭐 먹일까?</q><p>메뉴 3개를 골라 드려요. 등록한 알레르기는 늘 빼요</p></li>
+        <li><q>땅콩소스 먹여도 될까?</q><p>등록한 알레르기, 나이 기준과 겹치는지 알려 드려요</p></li>
+        <li><q>이번 주 영양 균형 어때?</q><p>어떤 음식이 적게, 많이 나왔는지 말해 드려요</p></li>
+        <li><q>비 오는 날 집에서 할 놀이 추천해줘</q><p>요즘 좋아하는 것에서 이어지는 놀이 3개</p></li>
+        <li><q>공룡 좋아하는데 책 추천해줘</q><p>실제 책 3권 (제목 · 지은이)</p></li>
+        <li><q>긴장하면 손톱을 물어뜯어. 어떻게 고쳐?</q><p>상황에 맞춘 방법 3개. 언제 그러는지 안 적으면 한 번 물어봐요</p></li>
+      </ul>
+    </section>
+
+    <!-- 18 입력 예시: 물어보기(건강) -->
+    <section class="slide" data-section="입력 예시">
+      <span class="tag t-red">입력 예시 · 건강과 성장</span>
+      <h2>기록을 모아 정리해 드려요</h2>
+      <ul class="ex">
+        <li><q>열 언제부터 났더라?</q><p>최근 이틀 체온을 시간순으로 정리해요</p></li>
+        <li><q>내일 소아과 가는데 최근 증상 정리해줘</q><p>증상 · 먹인 약 · 최근 식사 · 알레르기를 날짜순으로</p></li>
+        <li><q>영유아 검진 언제 받아야 해?</q><p>지금 받을 검진 차수와 이 시기 권장 접종</p></li>
+        <li><q>시터한테 줄 알레르기랑 먹는 약 정리해줘</q><p>알레르기 · 만성질환을 담은 응급 카드</p></li>
+        <li><q>6개월 동안 얼마나 컸어?</q><p>잰 날짜와 키 · 몸무게를 그대로 보여 드려요</p></li>
+      </ul>
+    </section>
+
+    <!-- 19 입력 예시: 이런 말에는 -->
+    <section class="slide" data-section="입력 예시">
+      <span class="tag t-red">알아두세요</span>
+      <h2>이런 말에는 이렇게 답해요</h2>
+      <ul class="ex">
+        <li><q>숨을 잘 못 쉬어 · 경련을 해</q><p class="alert">지금 바로 119에 연락하거나 가까운 응급실로 가세요</p></li>
+        <li><q>어제부터 계속 기침하는데 폐렴이야?</q><p>진단과 약 용량은 답하지 않고 병원·약사 확인을 안내해요. 증상은 기록해 둬요</p></li>
+        <li><q>우리 애 우유 알레르기 있어. 등록해줘</q><p>아이 탭에서 직접 넣도록 안내하고 그 화면으로 가는 버튼을 드려요</p></li>
+        <li><q>오늘 불고기 먹었다고 한 기록 지워줘</q><p>지울 기록이 체크된 카드가 나와요. 삭제 버튼을 눌러야 지워져요</p></li>
+        <li><q>추천해준 메뉴 재료 주문해줘</q><p>주문 · 예약 · 연락은 대신 해 드릴 수 없어요</p></li>
+        <li><q>나 오늘 너무 피곤해</q><p>아이가 한 일이 아니라서 기록하지 않아요</p></li>
+      </ul>
+    </section>
+
+    <!-- 20 참여 -->
+    <section class="slide end" data-section="참여">
+      <span class="tag t-green">참여하기</span>
+      <h2>써 보시고 의견을 들려주세요</h2>
+      <div class="gift">
+        <b>설문에 참여해 주신 분 중<br>5분께 투썸플레이스 상품권</b>
+        <span>좋은 점도, 아쉬운 점도 솔직하게 부탁드려요</span>
+      </div>
+      <div class="actions">
+        <a class="btn primary" id="survey" href="#" target="_blank" rel="noopener">설문 참여하기</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=kr.ai.icatch&amp;hl=ko" target="_blank" rel="noopener"><small>Android</small>앱 설치하기</a>
+        <a class="btn" href="https://icatch.ai.kr/" target="_blank" rel="noopener"><small>iPhone</small>웹으로 열기</a>
+      </div>
+      <p class="contact">
+        문의 <a href="tel:010-2370-1299">010-2370-1299</a><br>
+        <a href="mailto:siiihhaaa@pusan.ac.kr">siiihhaaa@pusan.ac.kr</a>
+      </p>
+      <p class="sign">카카오테크 캠퍼스 부산대 3팀</p>
+    </section>
+
+  </main>
+
+  <nav class="nav" aria-label="페이지 이동">
+    <button type="button" id="prev" aria-label="이전">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button type="button" id="next" aria-label="다음">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </nav>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lb-close" aria-label="닫기">닫기 ✕</button>
+    <div class="lb-scroll"><img id="lbImg" alt=""></div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
