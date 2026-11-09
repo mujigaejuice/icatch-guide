@@ -139,6 +139,19 @@ h2.sub { font-size: 20px; text-align: center; color: var(--green-ink); }
   background: linear-gradient(rgba(255, 255, 255, 0), #fff 85%);
   pointer-events: none;
 }
+/* 설명 글이 함께 들어가는 장: 이미지를 낮게 */
+.shot.short { max-height: 32vh; max-height: 32dvh; }
+.notes { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.notes li {
+  position: relative; padding: 11px 14px 11px 18px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+  font-size: 15px; line-height: 1.5;
+}
+.notes li::before {
+  content: ""; position: absolute; left: 0; top: 12px; bottom: 12px; width: 4px;
+  border-radius: 4px; background: var(--indigo);
+}
+
 /* 이미지 아래쪽(준비물 영역)을 보여주는 변형 */
 .shot.bottom { display: flex; align-items: flex-end; }
 .shot.bottom img { flex: none; }
