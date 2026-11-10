@@ -1,6 +1,4 @@
 (function () {
-  // 설문 링크가 준비되면 아래에 구글 설문지 주소를 넣어 주세요.
-  var SURVEY_URL = "https://docs.google.com/forms/d/e/1FAIpQLSd9mtm1LQUNeWzfGc5b2LD2YV5mkS9JiT3Z8aQryAefmPH7Zw/viewform";
 
   var deck = document.getElementById("deck");
   var slides = Array.prototype.slice.call(deck.children);
@@ -11,16 +9,6 @@
   var next = document.getElementById("next");
   var total = slides.length;
   var current = 0;
-
-  /* 설문 버튼 */
-  var survey = document.getElementById("survey");
-  if (SURVEY_URL) {
-    survey.href = SURVEY_URL;
-  } else {
-    survey.removeAttribute("href");
-    survey.classList.add("off");
-    survey.textContent = "설문 링크 준비 중";
-  }
 
   /* 진행 표시 */
   function render(i) {
