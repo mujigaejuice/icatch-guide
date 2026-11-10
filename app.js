@@ -1,6 +1,6 @@
 (function () {
   // 설문 링크가 준비되면 아래에 구글 설문지 주소를 넣어 주세요.
-  var SURVEY_URL = "";
+  var SURVEY_URL = "https://docs.google.com/forms/d/e/1FAIpQLSd9mtm1LQUNeWzfGc5b2LD2YV5mkS9JiT3Z8aQryAefmPH7Zw/viewform";
 
   var deck = document.getElementById("deck");
   var slides = Array.prototype.slice.call(deck.children);
